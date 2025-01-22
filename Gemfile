@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+# Use the github-pages gem for GitHub Pages compatibility
+gem 'github-pages', group: :jekyll_plugins
 
-group :jekyll_plugins do
-  gem "jekyll-sitemap"
-  gem "jekyll-paginate"
-  gem "jemoji"
-end
+# Add jekyll-remote-theme if using a remote theme
+gem 'jekyll-remote-theme'
