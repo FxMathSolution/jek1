@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fxmathsolution.github.io/jek1/" # Replace with your GitHub Pages URL
+url: "https://your-username.github.io" # Replace with your GitHub Pages URL
 
 # Author Settings
 author: David Freeman # add your name
@@ -26,8 +26,9 @@ analytics: # Google Analytics
 # Build Settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
-  - jekyll-paginate-v2
+  - jekyll-feed # GitHub Pages-compatible alternative to jekyll-sitemap
+  - jekyll-paginate-v2 # GitHub Pages-compatible alternative to jekyll-paginate
+  - jemoji # Supported by GitHub Pages
 
 paginate: 8
 paginate_path: "/page/:num"
